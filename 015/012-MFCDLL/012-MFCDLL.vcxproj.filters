@@ -16,6 +16,9 @@
     <Filter Include="AsciiToUTF8">
       <UniqueIdentifier>{82ca6746-e47f-4d59-a3ff-1ce13ab7769b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="基址偏移">
+      <UniqueIdentifier>{b91f4b6f-aa5e-4c16-bb22-408daf17a75f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -39,6 +42,9 @@
     <ClCompile Include="AsciiToUTF8.cpp">
       <Filter>AsciiToUTF8</Filter>
     </ClCompile>
+    <ClCompile Include="RMEM.cpp">
+      <Filter>基址偏移</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="012-MFCDLL.h">
@@ -58,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="AsciiToUTF8.h">
       <Filter>AsciiToUTF8</Filter>
+    </ClInclude>
+    <ClInclude Include="RMEM.h">
+      <Filter>基址偏移</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
