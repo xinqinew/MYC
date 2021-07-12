@@ -5,6 +5,7 @@
 #include "012-MFCDLL.h"
 #include "PAGE1.h"
 #include "afxdialogex.h"
+#include "遍历怪物.h"
 
 
 // CPAGE1 对话框
@@ -76,5 +77,7 @@ void CPAGE1::OnBnClickedButton()
 void CPAGE1::OnBnClickedButtonEnumMonster()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	遍历怪物列表();
+	//遍历怪物列表();
+	
+	bian_li_guai_wu();
 }

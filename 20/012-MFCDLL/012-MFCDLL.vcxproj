@@ -14,7 +14,7 @@
     <ProjectGuid>{0A503B86-5188-4319-B0DD-B9C00ED00166}</ProjectGuid>
     <RootNamespace>My012MFCDLL</RootNamespace>
     <Keyword>MFCDLLProj</Keyword>
-    <ProjectName>20-MFCDLL</ProjectName>
+    <ProjectName>MFCDLL</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -96,6 +96,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="012-MFCDLL.def" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="ReadMe.txt" />
     <None Include="res\My012MFCDLL.rc2" />
   </ItemGroup>

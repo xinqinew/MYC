@@ -1,2 +1,4 @@
 #pragma once
-void 遍历怪物列表();
+
+char* GetObjName(UINT64 vrcx);
+void bian_li_guai_wu();

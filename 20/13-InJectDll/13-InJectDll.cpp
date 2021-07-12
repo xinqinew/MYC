@@ -70,7 +70,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	char 当前目录[256] ={0};
 	GetCurrentDirectoryA(256,当前目录);
 	//拼接DLL全路径名
-	strcat_s( 当前目录,"\\012-MFCDLL.dll");
+	strcat_s( 当前目录,"\\MFCDLL.dll");
 	printf("要注入的DLL全路径名为：%s \r\n",当前目录);
 	//注入DLL
 	注入DLL(当前目录);
