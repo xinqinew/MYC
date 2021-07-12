@@ -32,6 +32,7 @@ void CPAGE1::DoDataExchange(CDataExchange* pDX)
 BEGIN_MESSAGE_MAP(CPAGE1, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON1, &CPAGE1::OnBnClickedButton1)
 	ON_BN_CLICKED(IDC_BUTTON, &CPAGE1::OnBnClickedButton)
+	ON_BN_CLICKED(IDC_BUTTON_ENUM_MONSTER, &CPAGE1::OnBnClickedButtonEnumMonster)
 END_MESSAGE_MAP()
 
 
@@ -69,4 +70,11 @@ void CPAGE1::OnBnClickedButton()
 	utf8ToAscii(putf8Name,szpAscii);
 	m_edt_strA=szpAscii;
 	UpdateData(FALSE);//把变量的数据更新到窗口
+}
+
+
+void CPAGE1::OnBnClickedButtonEnumMonster()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	遍历怪物列表();
 }

@@ -22,4 +22,5 @@ public:
 	afx_msg void OnBnClickedButton1();
 	CString m_edt_strA;
 	afx_msg void OnBnClickedButton();
+	afx_msg void OnBnClickedButtonEnumMonster();
 };
