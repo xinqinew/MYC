@@ -74,7 +74,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	printf("要注入的DLL全路径名为：%s \r\n",当前目录);
 	//注入DLL
 	注入DLL(当前目录);
-	getchar();//等待
+	Sleep(100);
+	// getchar();//等待
 
 	return 0;
 }

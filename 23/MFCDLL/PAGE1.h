@@ -26,4 +26,6 @@ public:
 	float m_x;
 	float M_Y;
 	afx_msg void OnBnClickedButtonMove();
+	afx_msg void OnBnClickedButtonGetPos();
+	afx_msg void OnBnClickedButtonMove2();
 };

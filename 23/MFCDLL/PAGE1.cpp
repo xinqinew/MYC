@@ -39,6 +39,8 @@ BEGIN_MESSAGE_MAP(CPAGE1, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON, &CPAGE1::OnBnClickedButton)
 	ON_BN_CLICKED(IDC_BUTTON_ENUM_MONSTER, &CPAGE1::OnBnClickedButtonEnumMonster)
 	ON_BN_CLICKED(IDC_BUTTON_Move, &CPAGE1::OnBnClickedButtonMove)
+	ON_BN_CLICKED(IDC_BUTTON_GET_POS, &CPAGE1::OnBnClickedButtonGetPos)
+	ON_BN_CLICKED(IDC_BUTTON_Move2, &CPAGE1::OnBnClickedButtonMove2)
 END_MESSAGE_MAP()
 
 
@@ -97,4 +99,25 @@ void 移动(float x,float y)
 void CPAGE1::OnBnClickedButtonMove()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	GameBase::MoveRole(m_x,M_Y);
+}
+
+
+void CPAGE1::OnBnClickedButtonGetPos()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	m_x = GameBase::GetRolePos()[0];
+	M_Y = GameBase::GetRolePos()[1];
+	UpdateData(FALSE);
+	return;
+}
+
+
+void CPAGE1::OnBnClickedButtonMove2()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UpdateData(TRUE);
+	GameBase::MoveRole2(m_x,M_Y);
+
 }

@@ -41,3 +41,4 @@
 #include "AsciiToUTF8.h"
 #include "RMEM.h"
 #include "±éÀú¹ÖÎï.h"
+#include "GameBase.h"
