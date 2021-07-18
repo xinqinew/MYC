@@ -30,4 +30,5 @@ public:
 	afx_msg void OnBnClickedButtonMove2();
 	afx_msg void OnBnClickedButtonFire();
 	afx_msg void OnBnClickedButtonIce();
+	afx_msg void OnBnClickedButtonEnumBackpack();
 };

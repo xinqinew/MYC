@@ -43,6 +43,7 @@ BEGIN_MESSAGE_MAP(CPAGE1, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_Move2, &CPAGE1::OnBnClickedButtonMove2)
 	ON_BN_CLICKED(IDC_BUTTON_FIRE, &CPAGE1::OnBnClickedButtonFire)
 	ON_BN_CLICKED(IDC_BUTTON_ICE, &CPAGE1::OnBnClickedButtonIce)
+	ON_BN_CLICKED(IDC_BUTTON_ENUM_BACKPACK, &CPAGE1::OnBnClickedButtonEnumBackpack)
 END_MESSAGE_MAP()
 
 
@@ -141,4 +142,11 @@ void CPAGE1::OnBnClickedButtonIce()
 	UINT64 arg2buf[50]={0};//疑似 坐标 方向 
 	UINT64 ID16[50]={0,0};//目标怪物的ID
 	TGCALL::UseActionCall(0x000000A8,arg2buf,ID16);
+}
+
+
+void CPAGE1::OnBnClickedButtonEnumBackpack()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	TGCALL::EnumBackpack();//遍历背包
 }
