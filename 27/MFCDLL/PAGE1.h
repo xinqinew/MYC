@@ -31,4 +31,5 @@ public:
 	afx_msg void OnBnClickedButtonFire();
 	afx_msg void OnBnClickedButtonIce();
 	afx_msg void OnBnClickedButtonEnumBackpack();
+	afx_msg void OnBnClickedButtonSeachgoods();
 };

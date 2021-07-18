@@ -44,6 +44,7 @@ BEGIN_MESSAGE_MAP(CPAGE1, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_FIRE, &CPAGE1::OnBnClickedButtonFire)
 	ON_BN_CLICKED(IDC_BUTTON_ICE, &CPAGE1::OnBnClickedButtonIce)
 	ON_BN_CLICKED(IDC_BUTTON_ENUM_BACKPACK, &CPAGE1::OnBnClickedButtonEnumBackpack)
+	ON_BN_CLICKED(IDC_BUTTON_SEACHGOODS, &CPAGE1::OnBnClickedButtonSeachgoods)
 END_MESSAGE_MAP()
 
 
@@ -149,4 +150,35 @@ void CPAGE1::OnBnClickedButtonEnumBackpack()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	TGCALL::EnumBackpack();//遍历背包
+}
+void FindMonsterGoods(UINT64 ID1,UINT64 ID2)
+{
+	UINT64 buf[100]={0};
+	UINT64 rsp30 = (UINT64)buf;
+	TPCALL4 pcall1 = (TPCALL4)(GameBase::GetExeBase()+0x424190);
+	TPCALL4 pcall2 = (TPCALL4)(GameBase::GetExeBase()+0x1659B0);
+	TPCALL4 pcall3 = (TPCALL4)(GameBase::GetExeBase()+0x131EEB0);
+	UINT64 vrax =pcall1(rsp30,0,0,0);
+	vrax =pcall2(rsp30+0x20,0,0,0);
+	W8(vrax+0,ID1);
+	W8(vrax+8,ID2);
+	vrax=pcall3(rsp30,0,0,0);
+}
+
+
+
+void CPAGE1::OnBnClickedButtonSeachgoods()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	UINT64 pBase = R8(GameBase::GetExeBase()+0x21E2858);
+
+	UINT64 ID1 = R8(pBase+0x30);
+	UINT64 ID2 = R8(pBase+0x38);
+	UINT64 arg1[40] = {ID1,ID2,0,0};
+	//通过选中对象ID 查找对象
+	TPCALL4 pcallGetObj1=(TPCALL4)(GameBase::GetExeBase()+0xB66AB0);
+	UINT64 vrax = pcallGetObj1((UINT64)arg1,0,0,0);//一个参数
+	TPCALL4 pcall =(TPCALL4)(R8(vrax)+0x2C0);//2C0右键单击打开搜索物品的窗口
+	pcall(vrax,0,0,0);
+ 
 }
