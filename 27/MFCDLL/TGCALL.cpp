@@ -26,6 +26,8 @@ void TGCALL::UseActionCall(UINT32 SkillID,UINT64* argBuf40,UINT64 *TargetID16)
 
 void TGCALL::EnumBackpack()
 {
+	OutputDebugStringA("yjx:遍历背包开始");
+	char buf1000[1000]={0};
 	//背包地址
 	UINT64 nBaseForBackpack = R8(GameBase::GetRoleObj()+0x20FA0);
 	for (UINT i=0;i<100;i++)
@@ -35,7 +37,10 @@ void TGCALL::EnumBackpack()
 		UINT64 obj1=0;
 		UINT64 obj2=0;
 		UINT32 nIDType =0;
-		if (ID2=0x0C490800000000000)
+		sprintf_s(buf1000,"yjx: ID1=%llx ID2=%llx \r\n",ID1,ID2);
+		OutputDebugStringA(buf1000);
+		if (ID2)
+			//if (ID2=0x0C490800000000000)
 		{
 			//rax+940	//对象1
 			//rax+48	//背包对象名字//对象2

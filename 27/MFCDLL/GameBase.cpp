@@ -17,7 +17,10 @@ UINT64 GameBase::GetExeBase()
 }
 UINT64 GameBase::GetRoleObj()//返回角色对象地址
 {
-	return R8(R8(GetExeBase()+0x2387C88)+0x200);
+	// return R8(R8(GetExeBase()+0x2387C88)+0x200);
+	TPCALL2 pcall2 = (TPCALL2)(GameBase::GetExeBase()+0x1127550);
+	const char *vrcx = "player";
+	return pcall2((UINT64)vrcx,0);
 }
 // 移动
 UINT64 GameBase::MoveRole(float x,float y)
