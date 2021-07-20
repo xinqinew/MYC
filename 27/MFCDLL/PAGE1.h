@@ -32,4 +32,5 @@ public:
 	afx_msg void OnBnClickedButtonIce();
 	afx_msg void OnBnClickedButtonEnumBackpack();
 	afx_msg void OnBnClickedButtonSeachgoods();
+	afx_msg void OnBnClickedButtonPick();
 };
