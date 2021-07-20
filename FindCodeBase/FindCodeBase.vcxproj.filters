@@ -16,6 +16,9 @@
     <Filter Include="遍历模块">
       <UniqueIdentifier>{e3745f1f-7611-435a-aac7-c305a99fcf4f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="定位基址偏移">
+      <UniqueIdentifier>{b50ce7c8-1c46-4b4f-9559-dc4c105b675a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -24,10 +27,16 @@
     <ClCompile Include="遍历模块.cpp">
       <Filter>遍历模块</Filter>
     </ClCompile>
+    <ClCompile Include="FINDCODE.cpp">
+      <Filter>定位基址偏移</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="遍历模块.h">
       <Filter>遍历模块</Filter>
+    </ClInclude>
+    <ClInclude Include="FINDCODE.h">
+      <Filter>定位基址偏移</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
