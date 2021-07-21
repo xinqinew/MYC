@@ -1,17 +1,30 @@
-﻿生成启动时间为 2021/7/21 0:38:15。
-     1>项目“Z:\教程\外挂\C++\Projects\FindCodeBase\FindCodeBase.vcxproj”在节点 2 上(build 个目标)。
-     1>InitializeBuildStatus:
+﻿生成启动时间为 2021/7/21 21:28:20。
+     1>项目“Z:\教程\外挂\C++\Projects\39\FindCodeBase.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“x64\Release\FindCodeBase.lastbuildstate”。
+       InitializeBuildStatus:
          正在创建“x64\Release\FindCodeBase.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt FINDCODE.cpp main.cpp RMEM.cpp "遍历模块.cpp"
+         FINDCODE.cpp
+         main.cpp
+         RMEM.cpp
+         遍历模块.cpp
        Link:
-         所有输出均为最新。
-         FindCodeBase.vcxproj -> Z:\教程\外挂\C++\Projects\FindCodeBase\x64\Release\FindCodeBase.exe
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\教程\外挂\C++\Projects\39\x64\Release\FindCodeBase.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Release\FindCodeBase.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Z:\教程\外挂\C++\Projects\39\x64\Release\FindCodeBase.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\教程\外挂\C++\Projects\39\x64\Release\FindCodeBase.lib" /MACHINE:X64 x64\Release\FINDCODE.obj
+         x64\Release\main.obj
+         x64\Release\RMEM.obj
+         "x64\Release\遍历模块.obj"
+         正在生成代码
+         已完成代码的生成
+         FindCodeBase.vcxproj -> Z:\教程\外挂\C++\Projects\39\x64\Release\FindCodeBase.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Z:\教程\外挂\C++\Projects\39\x64\Release\FindCodeBase.exe;#1" /manifest x64\Release\FindCodeBase.exe.intermediate.manifest
        FinalizeBuildStatus:
          正在删除文件“x64\Release\FindCodeBase.unsuccessfulbuild”。
          正在对“x64\Release\FindCodeBase.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“Z:\教程\外挂\C++\Projects\FindCodeBase\FindCodeBase.vcxproj”(build 个目标)的操作。
+     1>已完成生成项目“Z:\教程\外挂\C++\Projects\39\FindCodeBase.vcxproj”(rebuild 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.20
+已用时间 00:00:03.36

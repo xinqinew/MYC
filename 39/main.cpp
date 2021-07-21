@@ -7,12 +7,12 @@ CFINDCODE find;
 BYTE 特征码20FA0[]=
 {
 	0xA0,0x0F,0x02 //
-}
+};
 
 void 定位偏移例子()
 {
 	UINT_PTR 主模块地址 = find.GetExeBase();
-	UINT32 主模块大小=find.GetExeSize();
+	UINT64 主模块大小=find.GetExeSize();
 	UINT_PTR 主模块开始地址 = find.GetExeBegin();
 	UINT_PTR 主模块结束地址 = find.GetExeEnd();
 	printf("主模块地址=%llX \r\n开始地址=%llX \r\n结束地址=%llX \r\n主模块大小=%llX",
@@ -33,7 +33,7 @@ void 定位CALL地址偏移例子()
 {
 	static BYTE 特征码0C[]={0x81,0xC3,0x88};
 	UINT_PTR 主模块地址 = find.GetExeBase();
-	UINT32 主模块大小=find.GetExeSize();
+	UINT64 主模块大小=find.GetExeSize();
 	UINT_PTR 主模块开始地址 = find.GetExeBegin();
 	UINT_PTR 主模块结束地址 = find.GetExeEnd();
 	//查找特征码 定位偏移

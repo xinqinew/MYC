@@ -30,6 +30,9 @@
     <ClCompile Include="FINDCODE.cpp">
       <Filter>定位基址偏移</Filter>
     </ClCompile>
+    <ClCompile Include="RMEM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="遍历模块.h">
@@ -37,6 +40,12 @@
     </ClInclude>
     <ClInclude Include="FINDCODE.h">
       <Filter>定位基址偏移</Filter>
+    </ClInclude>
+    <ClInclude Include="RMEM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

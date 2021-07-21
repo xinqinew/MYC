@@ -137,10 +137,13 @@
   <ItemGroup>
     <ClCompile Include="FINDCODE.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RMEM.cpp" />
     <ClCompile Include="遍历模块.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FINDCODE.h" />
+    <ClInclude Include="RMEM.h" />
+    <ClInclude Include="stdafx.h" />
     <ClInclude Include="遍历模块.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

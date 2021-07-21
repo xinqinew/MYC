@@ -155,7 +155,7 @@ UINT_PTR CFINDCODE::GetExeEnd()
 }
 
 //获取EXE模块大小
-SIZE_T CFINDCODE::GetExeSize();		
+SIZE_T CFINDCODE::GetExeSize()		
 {
 	static SIZE_T nSize=0;
 	if (nSize)
@@ -168,7 +168,7 @@ SIZE_T CFINDCODE::GetExeSize();
 	MEMORY_BASIC_INFORMATION meminfo;
 
 	//nSize函数写入lpBuffer的字节数,如果不等于sizeof(MEMORY_BASIC_INFORMATION)表示失败
-	SIZE_T nSize /*返回buf大小 */ = VirtualQueryEx(进程句柄,(LPCVOID)模块基址,&meminfo,sizeof(meminfo));
+	nSize /*返回buf大小 */ = VirtualQueryEx(进程句柄,(LPCVOID)模块基址,&meminfo,sizeof(meminfo));
 	nSize = meminfo.RegionSize;
 	CloseHandle(进程句柄);
 	return nSize;
@@ -190,7 +190,7 @@ UINT_PTR myMemcmp(UINT_PTR str1,UINT_PTR str2,SIZE_T nsize)
 {
 	SIZE_T size8=nsize/8;	//按8字节比较
 	SIZE_T size1=nsize%8; 	//按1字节比较 
-	UINT64* p8a=(UINT64*)strl;
+	UINT64* p8a=(UINT64*)str1;
 	UINT64* p8b=(UINT64*)str2;
 
 	BYTE* p1a=(BYTE*)str1;
@@ -219,11 +219,11 @@ UINT_PTR CFINDCODE::FindCode(BYTE*ByFindData,BYTE nSize)
 {
 	//缓冲区先把目标进程内存一次读取到我们自己的缓冲区
 	SIZE_T 实际读取大小=ReadExeToBuf();
-	if (实际读取大小! =GetExeSize())
-	(
+	if (实际读取大小 !=GetExeSize())
+	{
 		printf("暂停提示:实际读取大小=%llx,GetExeSize()=%llx \r\n",实际读取大小,GetExeSize());
 		getchar();
-	)
+	}
 	printf ("开始搜索特征码 实际读里大小=%11x GetExeSize()=%llx nSize=%X\r\n",实际读取大小,GetExeSize(),nSize);
 	//memcmp
 	SIZE_T 偏移=0;
@@ -240,7 +240,7 @@ UINT_PTR CFINDCODE::FindCode(BYTE*ByFindData,BYTE nSize)
 			break;
 		}
 		//printf("i=%llX br=%d\r\n",i,br);
-
+	}
 	return GetExeBase()+偏移;
 }
 
