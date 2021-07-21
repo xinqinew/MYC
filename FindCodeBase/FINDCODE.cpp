@@ -155,12 +155,20 @@ UINT_PTR CFINDCODE::GetExeEnd()
 //获取EXE模块大小
 SIZE_T CFINDCODE::GetExeSize();		
 {
+	static SIZE_T nSize=0;
+	if (nSize)
+	{
+		/* code */
+		return nSize;
+	}
 	HANDLE 进程句柄=GetGameHp();
 	UINT_PTR 模块基址 = GetExeBase();
 	MEMORY_BASIC_INFORMATION meminfo;
 
 	//nSize函数写入lpBuffer的字节数,如果不等于sizeof(MEMORY_BASIC_INFORMATION)表示失败
 	SIZE_T nSize /*返回buf大小 */ = VirtualQueryEx(进程句柄,(LPCVOID)模块基址,&meminfo,sizeof(meminfo));
-	return meminfo.RegionSize;
+	nSize = meminfo.RegionSize;
+	CloseHandle(进程句柄);
+	return nSize;
 }
 
