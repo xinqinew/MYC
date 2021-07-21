@@ -33,4 +33,7 @@ public:
 	afx_msg void OnBnClickedButtonEnumBackpack();
 	afx_msg void OnBnClickedButtonSeachgoods();
 	afx_msg void OnBnClickedButtonPick();
+	afx_msg void OnBnClickedButton3();
+	afx_msg void OnBnClickedButtonZhenglu();
+	afx_msg void OnBnClickedButtonFanlu();
 };

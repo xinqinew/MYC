@@ -46,6 +46,9 @@ BEGIN_MESSAGE_MAP(CPAGE1, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_ENUM_BACKPACK, &CPAGE1::OnBnClickedButtonEnumBackpack)
 	ON_BN_CLICKED(IDC_BUTTON_SEACHGOODS, &CPAGE1::OnBnClickedButtonSeachgoods)
 	ON_BN_CLICKED(IDC_BUTTON_PICK, &CPAGE1::OnBnClickedButtonPick)
+	ON_BN_CLICKED(IDC_BUTTON3, &CPAGE1::OnBnClickedButton3)
+	ON_BN_CLICKED(IDC_BUTTON_ZHENGLU, &CPAGE1::OnBnClickedButtonZhenglu)
+	ON_BN_CLICKED(IDC_BUTTON_FANLU, &CPAGE1::OnBnClickedButtonFanlu)
 END_MESSAGE_MAP()
 
 
@@ -195,4 +198,22 @@ void CPAGE1::OnBnClickedButtonPick()
 	pcall4(0,0,0,0);
 	pcall4(1,0,0,0);
 	pcall4(2,0,0,0);
+}
+
+
+void CPAGE1::OnBnClickedButton3()
+{
+	// 清空编辑框
+}
+
+
+void CPAGE1::OnBnClickedButtonZhenglu()
+{
+	// TODO: 在此添加控件通知处理程序代码
+}
+
+
+void CPAGE1::OnBnClickedButtonFanlu()
+{
+	// TODO: 在此添加控件通知处理程序代码
 }
