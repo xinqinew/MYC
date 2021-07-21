@@ -200,19 +200,37 @@ void CPAGE1::OnBnClickedButtonPick()
 	pcall4(2,0,0,0);
 }
 
+//从新手城出发
+TPOINT2POS fmov6[]={
+	{-8913,-129},
+	{-8952,-106},
+	{-8998,-76}
+};
 
 void CPAGE1::OnBnClickedButton3()
 {
 	// 清空编辑框
+	CDialogEx::OnDestroy();
+	TFindWay::退出清理();
 }
 
-
+//正向寻路
 void CPAGE1::OnBnClickedButtonZhenglu()
 {
 	// TODO: 在此添加控件通知处理程序代码
+	//计算 坐标组数
+	UINT n=sizeof(fmov6)/sizeof(TPOINT2POS);
+	TFindWay::多点正向寻路(fmov6,n);
+	//TFindWay::遍历坐标();
 }
 
+// void CPAGE1::OnDestroy()
+// {
+// 	CDialogEx::OnDestroy();
+// 	TFindWay::退出清理();
+// }
 
+//反向寻路
 void CPAGE1::OnBnClickedButtonFanlu()
 {
 	// TODO: 在此添加控件通知处理程序代码

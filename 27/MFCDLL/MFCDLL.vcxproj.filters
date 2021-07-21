@@ -15,6 +15,7 @@
     <ClCompile Include="TGCALL.cpp">
       <Filter>基址偏移\功能CALL测试</Filter>
     </ClCompile>
+    <ClCompile Include="TFindWay.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="012-MFCDLL.h" />
@@ -33,6 +34,7 @@
     <ClInclude Include="TGCALL.h">
       <Filter>基址偏移\功能CALL测试</Filter>
     </ClInclude>
+    <ClInclude Include="TFindWay.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="012-MFCDLL.rc" />
