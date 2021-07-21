@@ -11,9 +11,10 @@ CFINDCODE::~CFINDCODE(void)
 
 }
 
-#define szGameSubCaption "魔兽世界"
+#define szGameSubCaption "魔兽世界"	//define宏定义,将标识符定义为一个字符串,不加分号
 #define szClassName "GxWindowClass"
 
+//获取窗口句柄
 HWND CFINDCODE::GetGameHwnd(void)
 {
 	HWND hNext = FindWindowExA(HWND_DESKTOP,0,0,0);
@@ -46,7 +47,7 @@ HANDLE CFINDCODE::GetGameHp()
 {
 	DWORD dwPid = GetPID();
 	HANDLE hp = OpenProcess(PROCESS_ALL_ACCESS,0,dwPid);
-	printf("hp=%hp, pid=%d\r\n",hp,dwPid);
+	// printf("hp=%hp, pid=%d\r\n",hp,dwPid);
 	return hp;
 }
 
@@ -138,14 +139,28 @@ UINT_PTR CFINDCODE::GetExeBegin()
 //获取EXE结束地址
 UINT_PTR CFINDCODE::GetExeEnd()
 {
+	// HANDLE 进程句柄=GetGameHp();
+	// UINT_PTR 模块基址 = GetExeBegin();
+	// MEMORY_BASIC_INFORMATION meminfo;
+
+	// //nSize函数写入lpBuffer的字节数,如果不等于sizeof(MEMORY_BASIC_INFORMATION)表示失败
+	// SIZE_T nSize /*返回buf大小 */ = VirtualQueryEx(进程句柄,(LPCVOID)模块基址,&meminfo,sizeof(meminfo));
+	// UINT_PTR 结束地址=(UINT_PTR)meminfo.AllocationBase+meminfo.RegionSize;
+	// printf("GetExeEnd: AllocationBase=%llx,RegionSize=%X 结束地址=%llx \r\n",meminfo.AllocationBase,meminfo.RegionSize,结束地址);
+	// return 结束地址;
+	return GetExeBase()+GetExeSize();
+
+}
+
+//获取EXE模块大小
+SIZE_T CFINDCODE::GetExeSize();		
+{
 	HANDLE 进程句柄=GetGameHp();
-	UINT_PTR 模块基址 = GetExeBegin();
+	UINT_PTR 模块基址 = GetExeBase();
 	MEMORY_BASIC_INFORMATION meminfo;
 
 	//nSize函数写入lpBuffer的字节数,如果不等于sizeof(MEMORY_BASIC_INFORMATION)表示失败
 	SIZE_T nSize /*返回buf大小 */ = VirtualQueryEx(进程句柄,(LPCVOID)模块基址,&meminfo,sizeof(meminfo));
-	UINT_PTR 结束地址=(UINT_PTR)meminfo.AllocationBase+meminfo.RegionSize;
-	printf("GetExeEnd: AllocationBase=%llx,RegionSize=%X 结束地址=%llx \r\n",meminfo.AllocationBase,meminfo.RegionSize,结束地址);
-	return 结束地址;
-
+	return meminfo.RegionSize;
 }
+

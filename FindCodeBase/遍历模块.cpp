@@ -1,4 +1,5 @@
 #include "遍历模块.h"
+#include <locale.h>
 
 #pragma comment(lib,"psapi.lib")
 
@@ -42,4 +43,3 @@ int 遍历进程模块(DWORD 进程PID)
 	return 0;
 }
 
-#include <locale.h>
