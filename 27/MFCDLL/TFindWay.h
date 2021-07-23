@@ -1,4 +1,5 @@
 #pragma once
+// using namespace std;
 {
 	float x;
 	float y;
