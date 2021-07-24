@@ -1,86 +1,65 @@
-﻿生成启动时间为 2021/7/22 0:11:35。
-     1>项目“Z:\教程\外挂\C++\Projects\27\MFCDLL\MFCDLL.vcxproj”在节点 3 上(build 个目标)。
+﻿生成启动时间为 2021/7/24 16:55:57。
+     1>项目“Z:\教程\外挂\C++\Projects\27\MFCDLL\MFCDLL.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在对“Debug\MFCDLL.unsuccessfulbuild”执行 Touch 任务。
        ClCompile:
          所有输出均为最新。
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MFCDLL.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt PAGE1.cpp TFindWay.cpp
          TFindWay.cpp
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(13): error C2039: “queue”: 不是“std”的成员
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(13): error C2144: 语法错误:“int”的前面应有“;”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(13): error C2143: 语法错误 : 缺少“;”(在“<”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(13): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(13): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(13): error C2238: 意外的标记位于“;”之前
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(14): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(14): error C2182: “姝ｅ悜鍒濆鍖栧潗鏍囧簭鍒TPOINT2POS”: 非法使用“void”类型
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(14): error C2146: 语法错误: 缺少“;”(在标识符“n”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(14): error C2059: 语法错误:“)”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(15): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(15): error C2182: “鍙嶅悜鍒濆鍖栧潗鏍囧簭鍒TPOINT2POS”: 非法使用“void”类型
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(15): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(15): error C2146: 语法错误: 缺少“;”(在标识符“n”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(15): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(15): error C2059: 语法错误:“)”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(15): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(18): error C2061: 语法错误: 标识符“TPOINT2POS”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(19): error C2061: 语法错误: 标识符“POINT2POS”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(21): error C2059: 语法错误:“)”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(4): error C2470: “std”: 看起来像函数定义，但没有参数列表；跳过明显的函数体
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(4): error C2059: 语法错误:“;”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(22): error C2065: “m_posqueue”: 未声明的标识符
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(22): error C2228: “.front”的左边必须有类/结构/联合
-                 类型是“'unknown-type'”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(22): error C2228: “.x”的左边必须有类/结构/联合
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(23): error C2065: “m_posqueue”: 未声明的标识符
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(23): error C2228: “.front”的左边必须有类/结构/联合
-                 类型是“'unknown-type'”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(23): error C2228: “.y”的左边必须有类/结构/联合
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(26): error C3861: “fabs”: 找不到标识符
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(28): error C2065: “c”: 未声明的标识符
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(31): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(31): error C2182: “鍙嶅悜鍒濆鍖栧潗鏍囧簭鍒TPOINT2POS”: 非法使用“void”类型
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(31): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(31): error C2146: 语法错误: 缺少“;”(在标识符“n”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(31): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(31): error C2377: “SIZE_T”: 重定义；typedef 不能由任何其他符号重载
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(22): error C2065: “TPOINT2POS”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(23): error C2061: 语法错误: 标识符“TPOINT2POS”
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(24): error C2061: 语法错误: 标识符“TPOINT2POS”
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(27): error C2061: 语法错误: 标识符“TPOINT2POS”
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(28): error C2061: 语法错误: 标识符“POINT2POS”
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(8): error C2065: “TPOINT2POS”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(8): error C2143: 语法错误 : 缺少“;”(在“TFindWay::m_posqueue”的前面)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(8): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(8): error C2371: “m_posqueue”: 重定义；不同的基类型
+                 z:\教程\外挂\c++\projects\27\mfcdll\tfindway.h(22) : 参见“m_posqueue”的声明
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(26): error C2663: “std::queue<_Ty,_Container>::front”: 2 个重载没有“this”指针的合法转换
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(26): error C2228: “.x”的左边必须有类/结构/联合
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(27): error C2663: “std::queue<_Ty,_Container>::front”: 2 个重载没有“this”指针的合法转换
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(27): error C2228: “.y”的左边必须有类/结构/联合
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(37): error C2065: “TPOINT2POS”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(37): error C2065: “arrayPos”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(37): error C2275: “SIZE_T”: 将此类型用作表达式非法
                  c:\program files (x86)\microsoft sdks\windows\v7.0a\include\basetsd.h(421) : 参见“SIZE_T”的声明
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(31): error C2059: 语法错误:“)”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(32): error C2470: “n”: 看起来像函数定义，但没有参数列表；跳过明显的函数体
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(46): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(46): error C2182: “姝ｅ悜鍒濆鍖栧潗鏍囧簭鍒TPOINT2POS”: 非法使用“void”类型
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(46): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(46): error C2086: “int *arrayPos”: 重定义
-                 z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(31) : 参见“arrayPos”的声明
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(46): error C2146: 语法错误: 缺少“;”(在标识符“n”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(46): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(46): error C2086: “int SIZE_T”: 重定义
-                 z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(31) : 参见“SIZE_T”的声明
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(46): error C2059: 语法错误:“)”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(47): error C2470: “n”: 看起来像函数定义，但没有参数列表；跳过明显的函数体
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(61): error C2059: 语法错误:“)”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(62): error C2470: “TFindWay::閫€鍑烘竻鐞”: 看起来像函数定义，但没有参数列表；跳过明显的函数体
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(70): error C2065: “POINT2POS”: 未声明的标识符
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(70): error C2146: 语法错误: 缺少“)”(在标识符“n”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(70): error C2761: “int TFindWay::澶氱偣姝ｅ悜瀵昏矾(void)”: 不允许成员函数重新声明
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(70): error C2059: 语法错误:“)”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(71): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(71): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(84): error C2065: “POINT2POS”: 未声明的标识符
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(84): error C2146: 语法错误: 缺少“)”(在标识符“n”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(84): error C2761: “int TFindWay::澶氱偣鍙嶅悜瀵昏矾(void)”: 不允许成员函数重新声明
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(84): error C2059: 语法错误:“)”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(85): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(85): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(101): error C2065: “m_posqueue”: 未声明的标识符
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(101): error C2228: “.empty”的左边必须有类/结构/联合
-                 类型是“'unknown-type'”
-     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(101): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(37): error C2146: 语法错误: 缺少“)”(在标识符“n”的前面)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(37): error C2761: “void TFindWay::反向初始化坐标序列(void)”: 不允许成员函数重新声明
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(37): error C2059: 语法错误:“)”
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(38): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(38): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(52): error C2065: “TPOINT2POS”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(52): error C2065: “arrayPos”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(52): error C2275: “SIZE_T”: 将此类型用作表达式非法
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\basetsd.h(421) : 参见“SIZE_T”的声明
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(52): error C2146: 语法错误: 缺少“)”(在标识符“n”的前面)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(52): error C2761: “void TFindWay::正向初始化坐标序列(void)”: 不允许成员函数重新声明
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(52): error C2059: 语法错误:“)”
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(53): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(53): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(76): error C2065: “POINT2POS”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(76): error C2065: “arrayPos”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(76): error C2275: “SIZE_T”: 将此类型用作表达式非法
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\basetsd.h(421) : 参见“SIZE_T”的声明
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(76): error C2146: 语法错误: 缺少“)”(在标识符“n”的前面)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(76): error C2761: “int TFindWay::多点正向寻路(void)”: 不允许成员函数重新声明
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(76): error C2059: 语法错误:“)”
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(77): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(77): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(90): error C2065: “POINT2POS”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(90): error C2065: “arrayPos”: 未声明的标识符
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(90): error C2275: “SIZE_T”: 将此类型用作表达式非法
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\basetsd.h(421) : 参见“SIZE_T”的声明
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(90): error C2146: 语法错误: 缺少“)”(在标识符“n”的前面)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(90): error C2761: “int TFindWay::多点反向寻路(void)”: 不允许成员函数重新声明
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(90): error C2059: 语法错误:“)”
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(91): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(91): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(107): error C2662: “std::queue<_Ty,_Container>::empty”: 不能将“this”指针从“std::queue”转换为“const std::queue<_Ty,_Container> &”
+                 原因如下: 无法从“std::queue”转换为“const std::queue<_Ty,_Container>”
+                 转换要求第二个用户定义的转换运算符或构造函数
+     1>z:\教程\外挂\c++\projects\27\mfcdll\tfindway.cpp(107): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
          PAGE1.cpp
      1>z:\教程\外挂\c++\projects\27\mfcdll\page1.cpp(204): error C2146: 语法错误: 缺少“;”(在标识符“fmov6”的前面)
      1>z:\教程\外挂\c++\projects\27\mfcdll\page1.cpp(204): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
@@ -95,4 +74,4 @@
 
 生成失败。
 
-已用时间 00:00:07.60
+已用时间 00:00:07.75

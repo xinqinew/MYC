@@ -1,15 +1,16 @@
-#pragma once
-// using namespace std;
-{
-	float x;
-	float y;
-}TPOINT2POS;
-{
-	float x;
-	float y;
-	float z;
-}TPOINT3POS;
-
+﻿#pragma once
+#include <queue>
+using namespace std;
+//{
+//	float x;
+//	float y;
+//}TPOINT2POS;
+//{
+//	float x;
+//	float y;
+//	float z;
+//}TPOINT3POS;
+//“queue”: 不是“std”的成员
 class TFindWay
 {
 public:

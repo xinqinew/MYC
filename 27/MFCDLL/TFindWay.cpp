@@ -1,3 +1,7 @@
+﻿// #ifndef _STDAFX_H
+// #define _STDAFX_H
+// #endif
+ //该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 
 #include "stdafx.h"
 #include "TFindWay.h"
 
